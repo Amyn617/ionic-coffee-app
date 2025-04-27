@@ -1,5 +1,7 @@
 # Coffee Ionic App
 
+![test](https://github.com/user-attachments/assets/428ef57a-d36e-45bf-aab5-64a6dc5fffca)
+
 This is a cross-platform coffee shop app built with [Ionic React](https://ionicframework.com/docs/react), [Vite](https://vitejs.dev/), and [Capacitor](https://capacitorjs.com/). The app features a modern UI for browsing coffee drinks and beans, managing a cart, and viewing favorites and notifications.
 
 ## Features
