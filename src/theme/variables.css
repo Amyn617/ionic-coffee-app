@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Miriam+Libre:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --orange: #d17842;
+  --grey: #4e5053;
+  --dark: #0c0f14;
+  --dark-2: #141921;
+  --ion-font-family: "Poppins", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  box-shadow: none;
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+span,
+h1,
+h2,
+h3 {
+  color: white;
+}
+
+ion-button {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Remove ion-tab-bar ripple effect */
+ion-tab-button::before,
+ion-tab-button::after {
+  background: transparent !important;
+}
+
+ion-tab-button.tab-selected::before {
+  background: transparent !important;
+}
+
+html,
+body,
+ion-app,
+ion-content {
+  background-color: var(--dark) !important;
+  color: white;
+  font-family: var(--ion-font-family);
+}
+
+/* Update scrollbar settings */
+ion-content {
+  --overflow: scroll !important;
+}
+
+ion-content::part(scroll) {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+ion-content::part(scroll)::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+ion-tab-bar {
+  background-color: var(--dark);
+  height: 10vh;
+  /* padding: 20px 0; */
+}
+
+ion-tab-button {
+  background: none !important; /* Remove background */
+  color: var(--grey) !important; /* Keep the default color */
+  --ripple-color: transparent !important; /* Disable ripple effect */
+  transition: none !important; /* Remove any transitions */
+}
+
+ion-tab-button.tab-selected {
+  background: none !important; /* Remove background on active state */
+  color: var(--grey) !important; /* Remove active color */
+  box-shadow: none !important; /* Remove box shadow */
+}
+
+ion-tab-button:active {
+  background: none !important; /* Remove background on active click */
+  box-shadow: none !important; /* Remove box shadow on active click */
+}
+
+ion-icon {
+  color: var(--grey);
+  font-size: 25px;
+}
+
+ion-tab-button.tab-selected ion-icon {
+  color: var(
+    --orange
+  ); /* You can keep or remove this if you don't want active icon color */
+}
+
+ion-tab-button:hover {
+  background: none !important; /* Remove hover background */
+  box-shadow: none !important; /* Remove hover shadow */
+}
+
+/* Optional: Remove all ripple effects */
+ion-ripple-effect {
+  display: none !important;
+}
+
+button {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Common header styles */
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark);
+  padding: 30px 0px;
+}

@@ -1,0 +1,232 @@
+ion-header {
+  box-shadow: none !important;
+}
+
+/* Remove duplicate .header-row styles as they're now in variables.css */
+
+.grid-button {
+  font-size: 25px;
+  padding: 10px;
+  border: 1px solid #262b33;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #262b33 0%, #262b3300 100%);
+}
+
+.profile-wrapper {
+  width: 47px;
+  height: 47px;
+  border-radius: 15px;
+  border: 1px solid #262b33;
+  overflow: hidden;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ion-content {
+  --background: var(--dark);
+  --padding-start: 30px;
+  --padding-end: 30px;
+  --padding-top: 30px;
+  --padding-bottom: 30px;
+}
+
+ion-title {
+  color: white;
+  font-size: 2em;
+  font-weight: 600;
+  padding-bottom: 25px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+  color: #52555a;
+  width: 100%;
+  padding: 5px 20px;
+  border-radius: 15px;
+  background-color: var(--dark-2);
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+.search ion-icon,
+.search ion-input {
+  color: #52555a;
+}
+
+.coffees {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: 600;
+  color: #52555a;
+  overflow-x: auto;
+  padding: 0 30px 25px;
+  margin: 0 -30px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 30px;
+}
+
+.coffees::-webkit-scrollbar {
+  display: none;
+}
+
+.coffees li {
+  position: relative;
+  padding-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.coffees li.active {
+  color: var(--orange);
+  font-weight: 800;
+}
+
+.coffees li.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: var(--orange);
+  border-radius: 50%;
+}
+
+.coffee-elements {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px 30px; /* Match ion-content padding */
+  margin: 10px -30px; /* Compensate for ion-content padding */
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 30px; /* So first card fully shows */
+  scrollbar-width: none; /* Firefox */
+  padding-bottom: 25px;
+}
+
+.coffee-elements::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+
+.coffee-card {
+  position: relative;
+  border: 1px solid #262b33;
+  display: inline-flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #262b33 0%, #262b3300 100%);
+  padding: 15px;
+  color: white;
+  width: max-content;
+  min-width: 168px;
+  max-width: 168px;
+  word-wrap: break-word;
+  scroll-snap-align: start;
+  transition: transform 0.5s ease;
+  border-radius: 25px;
+  z-index: 0;
+  overflow: hidden; /* Retained for the glow effect */
+}
+
+.coffee-card * {
+  position: relative;
+}
+
+.image-wrapper {
+  width: 135px;
+  height: 135px;
+  box-shadow: rgba(209, 120, 66, 0.25) 0px 15px 50px -15px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.coffee-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.rating-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  gap: 4px;
+  background-color: var(--dark-2);
+  padding: 6px 12px;
+  font-size: 0.65rem;
+  font-weight: 500;
+  line-height: 1;
+  border-radius: 0 0 0 25px;
+}
+
+.rating-badge::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-2);
+  border-radius: 0 0 0 25px;
+}
+
+.rating-badge ion-icon {
+  font-size: 0.65rem;
+  color: var(--orange);
+}
+
+.coffee-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.coffee-name {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.coffee-desc {
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
+.coffee-bottom {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dollar {
+  color: var(--orange);
+}
+
+.add-button {
+  background-color: var(--orange);
+  border-radius: 8px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
+.add-button ion-icon {
+  font-size: 1.2rem;
+  color: white;
+}
