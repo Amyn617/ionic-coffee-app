@@ -30,3 +30,6 @@ yarn-error.log*
 
 # Optional eslint cache
 .eslintcache
+
+# Android build output
+android/build/
