@@ -4,6 +4,8 @@
 
 This is a cross-platform coffee shop app built with [Ionic React](https://ionicframework.com/docs/react), [Vite](https://vitejs.dev/), and [Capacitor](https://capacitorjs.com/). The app features a modern UI for browsing coffee drinks and beans, managing a cart, and viewing favorites and notifications.
 
+**This project is inspired by the design in [this Figma Coffee Shop App UI](https://www.figma.com/design/RyVLhDKrymZhThABrSgzIK/Coffee-Shop-App-UI?node-id=11-2&t=VFIHt43fi9h2bLK9-0).**
+
 ## Features
 
 - Browse coffee drinks and beans with images from Unsplash API
